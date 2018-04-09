@@ -1,5 +1,8 @@
 html {
-	background: linear-gradient(blue, pink);
+	/* background: linear-gradient(yellow, pink); */
+	background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 	background-size: cover;
 	height: 100%;
 	min-height: 100%;
@@ -54,7 +57,7 @@ input[type="text"], select {
 }
 
 input[type="submit"] {
-	background: linear-gradient(red, orange);
+	background: radial-gradient(rgb(252, 161, 208), rgb(244, 66, 158));
 	padding:5px 10px;
 	border:1px solid #333;
 	color:#000;
@@ -66,6 +69,10 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
 	box-shadow: 2px 2px 0px rgba(0,255,0,.5);
+}
+
+input[type="checkbox"] {
+	display: inline-block;
 }
 
 .delete-task:hover, .delete-list:hover {
@@ -90,6 +97,11 @@ li {
 	margin:0 0 5px 0;
 	border-bottom:1px dotted #ccc;
 	padding:2px;
+}
+
+li.completed {
+	font-style: italic;
+	color: #3333331A;
 }
 
 select {
@@ -118,11 +130,15 @@ button {
 	font-size: 8px;
 }
 
+.right {
+	float: right;
+}
+
 #lists h2 {
 	font-size: 2em;
 	color: #26558b;
 	line-height: 22px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 #mocha {
